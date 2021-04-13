@@ -18,6 +18,7 @@ class MainScreen extends StatelessWidget {
           ),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Pagers(),
             Content(),
