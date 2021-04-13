@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import 'package:frontloops_14/utilities/constants.dart';
+
 class ReadButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -9,10 +11,7 @@ class ReadButton extends StatelessWidget {
         children: [
           Text(
             "READ",
-            style: TextStyle(
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold,
-            ),
+            style: kReadTextStyle,
           ),
           SizedBox(
             width: 10.0,

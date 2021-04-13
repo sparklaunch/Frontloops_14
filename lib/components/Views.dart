@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import 'package:frontloops_14/utilities/constants.dart';
+
 class Views extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,10 +18,7 @@ class Views extends StatelessWidget {
           ),
           Text(
             "49,403",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20.0,
-            ),
+            style: kViewsTextStyle,
           ),
         ],
       ),
