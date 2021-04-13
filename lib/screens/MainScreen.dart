@@ -8,6 +8,9 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        padding: EdgeInsets.all(
+          20.0,
+        ),
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage("./assets/images/background.jpg"),
