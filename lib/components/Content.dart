@@ -16,20 +16,26 @@ class Content extends StatelessWidget {
             width: 500.0,
             height: double.infinity,
             color: Colors.yellow.withAlpha(192),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ReadButton(),
-                Column(
+            child: Transform.scale(
+              scale: 0.66,
+              child: Transform.rotate(
+                angle: -0.26,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    MainTitle(),
-                    SizedBox(
-                      height: 100.0,
+                    ReadButton(),
+                    Column(
+                      children: [
+                        MainTitle(),
+                        SizedBox(
+                          height: 100.0,
+                        ),
+                        Views(),
+                      ],
                     ),
-                    Views(),
                   ],
                 ),
-              ],
+              ),
             ),
           ),
         ),
